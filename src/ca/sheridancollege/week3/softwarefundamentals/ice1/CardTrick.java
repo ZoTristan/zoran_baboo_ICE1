@@ -44,25 +44,51 @@ public class CardTrick {
         
        
         // and search magicHand here
-        boolean sameCard = false;
-        for(Card c : magicHand){
+//         boolean sameCard = false;
+//         for(Card c : magicHand){
             
-           if(c.getSuit().equalsIgnoreCase(chosenCard.getSuit()) && c.getValue() == chosenCard.getValue()){
-               sameCard = true;
-               break;
-           }
+//            if(c.getSuit().equalsIgnoreCase(chosenCard.getSuit()) && c.getValue() == chosenCard.getValue()){
+//                sameCard = true;
+//                break;
+//            }
                
-        }
+//         }
         
-        if(sameCard==true){
-            System.out.println("Your card is amongst the magicHand");
+//         if(sameCard==true){
+//             System.out.println("Your card is amongst the magicHand");
             
-        }else if(sameCard==false){
-            System.out.println("Nope");
-        }
+//         }else if(sameCard==false){
+//             System.out.println("Nope");
+//         }
         
         
         //Then report the result here     
+        
+        
+        //This is where the 'lucky card is'
+        Card luckyCard = new Card();
+        luckyCard.setSuit("Spades");
+        luckyCard.setValue(1);
+        
+        boolean sameCard = false;
+        for(Card c : magicHand){
+            if (c.getSuit().equalsIgnoreCase(luckyCard.getSuit()) && c.getValue() == luckyCard.getValue()){
+                sameCard = true;
+                break;
+            }
+        }
+        
+        if(sameCard==true){
+            System.out.println("The lucky card was there!");
+        }else{
+            System.out.println("Nope");
+        }
+        
     }
+    
+    
+    
+    
+    
     
 }
