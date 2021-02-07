@@ -6,7 +6,7 @@
 package ca.sheridancollege.week3.softwarefundamentals.ice1;
 
 /**
- *MODIFIER: Zoran Baboo
+ *@author Zoran Baboo
  *STUDENT ID: 991567274 
  */
 public class CardTrick {
@@ -25,6 +25,7 @@ public class CardTrick {
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
         //Then report the result here
+        System.out.println("Choose any card");
     }
     
 }
